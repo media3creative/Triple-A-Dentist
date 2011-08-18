@@ -22,15 +22,21 @@ jQuery(document).ready(function() {
 	//=======ANIMATION FOR MAIN MENU===========
 	//====FIX SAFARI MARGIN PROBLEM============
 	if(is_safari){
-		jQuery(".menu-hl").css("margin-left","-10px");
+		jQuery(".menu-hl").css("margin-left","-5px");
 	}
 	//=====MOUSE ENTER MENU ITEM==============
 	jQuery('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link').mouseenter(
 	  function () {
 		//alert(jQuery(this).attr("id") != '#main-6-link');
 				jQuery(this).next().animate(
-					{"margin-top":"-100px","background-color":"#bddc94","opacity":"1"},
+					{"height":"80px","margin-top":"-57px"},
 					{duration: 250
+					,ease: "swing"
+					,queue: false}
+				);
+				jQuery(this).animate(
+					{"background-color":"#BDDC94"},
+					{duration: 150
 					,ease: "swing"
 					,queue: false}
 				);
@@ -41,11 +47,17 @@ jQuery(document).ready(function() {
 	jQuery('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link').mouseleave(
 	  function () {
 				jQuery(this).next().animate(
-					{"margin-top":"-200px", "background-color":"black", "opacity":"0"},
-					{duration: 650
+					{"height":"40px","margin-top":"-37px"},
+					{duration: 350
 					,ease: "linear"
 					,queue: true}
 				);
+					jQuery(this).animate(
+						{"background-color":"transparent"},
+						{duration: 150
+						,ease: "swing"
+						,queue: false}
+					);
 	  }
 	);
 	//=====MOUSE ENTER MENU ITEM==============
@@ -97,7 +109,7 @@ jQuery(document).ready(function() {
 	});
 	jQuery('#main-4-link').click(function(){
 		changePage("#page4");
-		switchBg("bg5.jpg");
+		switchBg("bg4.jpg");
 		jQuery("p").addClass("black-text");
 		toggleSubPage(jQuery("#page4-sub1"));
 		// pageComeOut();

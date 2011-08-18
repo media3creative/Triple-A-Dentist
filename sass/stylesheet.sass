@@ -1,3 +1,11 @@
+@font-face
+	font-family: Helvetica_utralight
+	src: url(/font/helvetica_ultralight.ttf) format("truetype")
+
+@font-face
+	font-family: Helvetica_light
+	src: url(/font/helvetica_light.ttf) format("truetype")
+
 .bg1
 	position: fixed
 	top: 0px
@@ -6,7 +14,7 @@
 	//max-height: 1000px
 	height: 100%
 	background-color: #000000
-	background: url(/images/bg1.jpg) no-repeat top center scroll
+	background: url(/images/bg1.jpg) no-repeat center center scroll
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -19,7 +27,7 @@
 	//max-height: 1000px
 	height: 100%
 	background-color: #000000
-	background: url(/images/bg1.jpg) no-repeat top center scroll
+	background: url(/images/bg1.jpg) no-repeat center center scroll
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -61,28 +69,33 @@ ul.menu
 	padding-left: 0px
 	list-style-type: none
 li
-	font-size: 12px
 	margin-left: 60px
+	font-size: 12px
+	font-family:  Helvetica_light
+	letter-spacing: 0.05em
+	color: black
 	//display: inline-block
 //#main-3-link
 //	letter-spacing: 0.15em
 //	margin-top: 10px
 ul.menu li
 	display: inline-block
-	margin: 0px
+	margin: 5px
+	margin-top: 47px
 ul.menu a 
 	color: #FFFFFF
-	text-shadow: 0px 1px 1px black
+	//text-shadow: 0px 1px 1px black
+	padding-top: 10px
 	display: block
-	width: 100px
-	height: 25px
-	//background-color: #000000
+	width: 115px
+	height: 20px
 	font-family: "Helvetica"
 	font-size: 11px
 	letter-spacing: 0.2em
 	text-decoration: none
-	//line-height: 5em
-	margin-top: 5px
+	border:  2px dotted white
+	border-radius: 10px
+	margin-top: 23px
 	//margin-right: 45px
 ul.menu a:hover 
 	color: black
@@ -92,10 +105,10 @@ ul.menu a:hover
 	position: absolute
 	top: 0px
 	left: 0px
-	height: 50px
+	height: 100px
 	width: 100%
-	background-color: #bddc94
-	//background-image: url(/images/header_bg.png)
+	//background-color: #bddc94
+	background-image: url(/images/header_bg.png)
 .upper-footer
 	padding-top: 10px
 	padding-right: 20px
@@ -109,7 +122,7 @@ ul.menu a:hover
 	border-top-left-radius: 40px
 	background: rgba(0, 0, 0, 0.5)
 	color: white
-	font-family: "Verdana"
+	font-family: Helvetica_utralight
 	font-size: 11px
 	text-align: right
 .footer
@@ -126,7 +139,7 @@ ul.menu a:hover
 	float: left
 	height: 52px
 	color: white
-	font-family: "Verdana"
+	font-family: Helvetica_utralight
 	font-size: 11px
 	margin-left: 20px
 	margin-top: 10px
@@ -137,7 +150,7 @@ ul.menu a:hover
 	float: right
 	height: 52px
 	color: white
-	font-family: "Verdana"
+	font-family: Helvetica_utralight
 	font-size: 11px
 	margin-left: 20px
 	margin-right: 20px
@@ -150,7 +163,7 @@ ul.menu a:hover
 	height: 100%
 	width: 600px
 	background-color: #FFFFFF
-	opacity: 0.5
+	opacity: 0.7
 .content-container
 	z-index: 0
 	position: absolute
@@ -180,39 +193,42 @@ ul.menu a:hover
 	//background-image: url(/images/text_bg.png)
 
 .menu-hl
-	margin-left: -10px
-	margin-top: -200px
+	position: absolute
+	margin-left: -5px
+	margin-top: -37px
 	z-index: -1
-	position: fixed
-	height: 140px
-	width: 120px
-	background: rgba(0, 0, 0, 0)
-	//background-image: url(/images/menu_hl.png)
+	height: 40px
+	width: 130px
+	background-color: #25aae1
+	//background: rgba(0, 0, 0, 0)
+	//border:  2px dotted white
+	border-radius: 10px
+	background-image: url(/images/menu_hl.png)
 
 .menu-container
-	z-index: 5
-	position: absolute
+	z-index: 11
+	position: relative
 	text-align: center
-	margin-left: -10px
-	top: 35px
-	height: 50px
-	width: 100%
-	background-image: url(/images/header_bg.png)
-	//background-color: #25aae1
+	margin: auto
+	margin-top: -30px
+	height: 150px
+	width: 820px
+	background-image: url(/images/main_menu.png)
+	//background-color: #FFFFFF
 	//opacity: 0.7
 .page-title
 	position: relative
 	float: left
 	display: block
-	height: 70px
-	width: 350px
-	margin-top: -125px
-	background-color: #25aae1
-	color: white
-	font-family: "Verdana"
-	font-size: 36px
-	padding-left: 60px
 	padding-top: 25px
+	padding-left: 85px
+	height: 70px
+	width: 250px
+	margin-top: -125px
+	background-image: url(/images/title_banner.png)
+	color: white
+	font-family: Helvetica_utralight
+	font-size: 36px
 ul.submenu
 	position: relative
 	float: left
@@ -220,7 +236,7 @@ ul.submenu
 	letter-spacing: 0.2em
 	text-align: left
 	font-size: 11px
-	font-family: "Verdana"
+	font-family: Helvetica_light
 	margin-left: -50px
 	display: block
 	height: 27px
@@ -233,7 +249,7 @@ ul.submenu li
 	display: inline-block
 	overflow: hidden
 	padding-top: 7px
-	margin-left: -30px
+	margin-left: -20px
 	padding-right: 30px
 	width: 150px
 	height: 20px
@@ -246,7 +262,7 @@ ul.submenu li a:hover
 	//text-decoration: underline
 .content-type-1
 	//background-color: #333333
-	font-family: "Verdana"
+	font-family: Helvetica_utralight
 	width: 1000px
 	height: auto
 	margin-left: 0px
@@ -271,43 +287,32 @@ ul.submenu li a:hover
 	width: 300px
 	background-color: #25aae1
 
-.brown
-	background-color: #492114
+.blue
+	background-color: #25aae1
+	color: black
 	z-index: 1
-.white
-	background-color: #e7e2d4
+.green
+	background-color: #bddc94
 	color: black
 	z-index: 4
-.red
-	background-color: #D35B64
-	z-index: 3
-.yellow
-	background-color: #e1af57
-	color: black
-	z-index: 2
-.black
-	background-color: #000000
-	color: #e7e2d4
-	z-index: 1
-.black-text
-	color: black
-.pink
-	background-color: #25aae1
-	color: black	
 p
-	font-size: 12px
 	margin-right: 20px
-	color: black
 	margin-top: 10px
 	margin-left: 50px
+	font-size: 12px
+	font-family:  Helvetica_light
+	letter-spacing: 0.05em
+	color: black
 h1
 	color: #363636
-	font-family: "Verdana"
-	font-size: 24px
-	margin-left: 50px
+	font-family: Helvetica_utralight
+	font-size: 48px
+	margin-left: 30px
+	margin-bottom: 15px
 h2
-	margin-top: 20px
+	margin-top: 10px
 	margin-left: 50px
-	font-size: 13px
-	font-style: oblique
-	color: #534741
+	font-size: 18px
+	font-style: bold
+	color: #58595B
+	font-family: Helvetica_light

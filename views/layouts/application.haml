@@ -23,7 +23,6 @@
   .bg2
   .bg1
   .header
-  .logo
   .left-side
   .menu-container
     %ul.menu
@@ -33,9 +32,9 @@
       %li
         %a{:href => "#", :id => "main-2-link"} DOCTORS
         .menu-hl
-      %li
-        %a{:href => "#", :id => "main-3-link"} INFORMATION
-        .menu-hl
+      %li{:style => "width:200px;visibility:hidden;"}
+        %a{:href => "#"}
+        //.menu-hl
       %li
         %a{:href => "#", :id => "main-4-link"} SERVICES
         .menu-hl
@@ -45,14 +44,12 @@
   .content-container#page1
     #page-1-content-bg
     #page-1-content
-      .page-title Home
+      .page-title HOME
       %ul.submenu
-        %li.white#page1-sub1
+        %li.blue#page1-sub1
           %a{:href => "#"} About us
-        %li.yellow#page1-sub2
+        %li.green#page1-sub2
           %a{:href => "#"} Treatments
-        %li.red#page1-sub3
-          %a{:href => "#"} Patient Comfort 
       .content-type-1#page1-sub1-page
         .content-type-1-part-1
           %h1 Who we are
@@ -79,26 +76,15 @@
             %li - Implants
             %li - Cosmetic re-contouring
             %li - Bleaching: home and in-office Zoom!
-      .content-type-1#page1-sub3-page
-        .content-type-1-part-1
-          %h1 Patient Comfort
-          %p While no dental procedure is 100% comfortable, we go to great lengths to minimize any discomfort you might feel.  Many of our patients make statements like, "This wasn't even painful?  How did you do that?" 
-          %h2 Pre-medication
-          %p Patient comfort is one of the most important aspects of care.  Different patients have different needs for pain and anxiety control medication. Depending upon the procedure and your wishes, there are many medications we can prescribe.
-          %h2 Injections of Anesthesia
-          %p Injections of dental anesthesia can become more painful if not precisely done or if the injection is done at too rapid a rate.  We recognize this and take extra care when giving injections. 
-          %h2 Conscious Sedation
-          %p For those patients that would feel more comfortable with conscious sedation, we are pleased to offer both intravenous sedation and nitrous oxide analgesia. Both of these techniques will make you feel relaxed and at ease. Although you will be awake, you will not be aware of your surroundings. Conscious sedation can allow you to remain calm during dental procedures, with minimal recollection of your visit.
-          
   .content-container#page2
     #page-2-content
-      .page-title Doctors
+      .page-title DOCTORS
       %ul.submenu
-        %li.white#page2-sub1
+        %li.blue#page2-sub1
           %a{:href => "#"} Smith Jeef
-        %li.red#page2-sub2
+        %li.green#page2-sub2
           %a{:href => "#"} David Beckham 
-        %li.brown#page2-sub3
+        %li.blue#page2-sub3
           %a{:href => "#"} Susan Boyle
       .content-type-1#page2-sub1-page
         .content-type-1-part-1
@@ -115,108 +101,88 @@
     #page-3-content
       .page-title INFORMATION
       %ul.submenu
-        %li.white#page3-sub1
+        %li.blue#page3-sub1
           %a{:href => "#"} Periodontal
-        %li.red#page3-sub2
+        %li.green#page3-sub2
           %a{:href => "#"} Cosmetic
       .content-type-1#page3-sub1-page
+        .content-type-1-part-1
+      .content-type-1#page3-sub2-page
+        .content-type-1-part-1
+  .content-container#page4
+    #page-4-content
+      .page-title SERVICES
+      %ul.submenu
+        %li.blue#page4-sub1
+          %a{:href => "#"} Periodontal
+        %li.green#page4-sub2
+          %a{:href => "#"} Cosmetic
+        %li.blue#page4-sub3
+          %a{:href => "#"} Patient Comfort
+      .content-type-1#page4-sub1-page
         .content-type-1-part-1
           %h1 Periodontal Disease
           %p Periodontics is the branch of dentistry that deals with the care and treatment of the tissues surrounding and supporting your teeth. A periodontist is a dentist that specializes in the prevention and treatment of periodontal disease. Periodontists also place dental implants and can cosmetically enhance your smile through periodontal procedures.
           %p As periodontists, Drs. Darby and Johnson have received years of additional training in periodontics beyond their general dental degree. They have highly specialized knowledge and skill in the diagnosis and treatment of periodontal disease, options for cosmetic periodontal procedures and the placement of dental implants.
           %p The following will help you to better understand the procedures and conditions that Dr. Darby and Dr. Johnson are expert in dealing with
-        .content-type-1-part-2
-          %br
-          %br
-          %br
-          %br
-          %p.note
-            %b corporate
-            identity 
-            %b blue 
-            | $1800
-      .content-type-1#page3-sub2-page
+      .content-type-1#page4-sub2-page
         .content-type-1-part-1
           %h1 Cosmetic Procedures
           %h2 Crown Lengthening & Gingival Contouring
           %p Sometimes the teeth are quite small in relation to the gum tissue. This can create an unattractive "gummy" smile. An uneven gum line can also be distracting.
           %p The gum line, and the bone just beneath the gum line, can be lowered to change the appearance of your smile. This can create a more even gum line or make the teeth appear longer. “Gingival (gum) contouring" is the process of recontouring the gum only. "Crown lengthening" refers to recontouring of both gum and supporting bone.
           %p Procedure: Your periodontist administers a local anesthetic and gently recontours excess gum and bone tissue to expose more of your natural teeth.
-        .content-type-1-part-2
-          %br
-          %br
-          %br
-          %br
-          %p.note
-            %b corporate
-            identity 
-            %b blue 
-            | $1800
-  .content-container#page4
-    #page-4-content
-      .page-title Services
-      %ul.submenu
-        %li.white#page4-sub1
-          %a{:href => "#"} Periodontal
-        %li.red#page4-sub2
-          %a{:href => "#"} Cosmetic
-        %li.pink#page4-sub3
-          %a{:href => "#"} Forms
-      .content-type-1#page4-sub1-page
-        .content-type-1-part-1
-      .content-type-1#page4-sub2-page
-        .content-type-1-part-1
+          %h2 Teeth Whitening
+          %p At the Dental Cosmetic Center of Houston, we offer both in-office and custom at-home teeth whitening to help you get and keep the whitest smile possible. With in-office Pola treatment, you can get a whiter, brighter smile in under an hour! And our customized take-home trays will gently and thoroughly whiten your teeth on your own schedule, much more effectively than over the counter products.
       .content-type-1#page4-sub3-page
         .content-type-1-part-1
+          %h1 Patient Comfort
+          %p While no dental procedure is 100% comfortable, we go to great lengths to minimize any discomfort you might feel.  Many of our patients make statements like, "This wasn't even painful?  How did you do that?" 
+          %h2 Pre-medication
+          %p Patient comfort is one of the most important aspects of care.  Different patients have different needs for pain and anxiety control medication. Depending upon the procedure and your wishes, there are many medications we can prescribe.
+          %h2 Injections of Anesthesia
+          %p Injections of dental anesthesia can become more painful if not precisely done or if the injection is done at too rapid a rate.  We recognize this and take extra care when giving injections. 
+          %h2 Conscious Sedation
+          %p For those patients that would feel more comfortable with conscious sedation, we are pleased to offer both intravenous sedation and nitrous oxide analgesia. Both of these techniques will make you feel relaxed and at ease. Although you will be awake, you will not be aware of your surroundings. Conscious sedation can allow you to remain calm during dental procedures, with minimal recollection of your visit.
   .content-container#page5
     #page-5-content-bg
     #page-5-content
-      .page-title Contact
+      .page-title CONTACTS
       %ul.submenu
-        %li.white#page5-sub1
+        %li.blue#page5-sub1
           %a{:href => "#"} Contact
-        %li.red#page5-sub2
-          %a{:href => "#"} Direction
+        %li.green#page5-sub2
+          %a{:href => "#"} Appointment
       .content-type-1#page5-sub1-page
         .content-type-1-part-1
-          %h1 Contact
-          %h2 Mailing
-          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
-          %h2 Maps
-          %p Corporate design (logos, uniforms)
-          %p Corporate communications (advertisements, public relations, information, commercials)
-          %p Corporate behavior (internal values, norms)
-        .content-type-1-part-2
-          %br
-          %br
-          %br
-          %br
-          %p.note
-            %b corporate
-            identity 
-            %b blue 
-            | $1800
+          %h2 Contact
+          %p 
+            %b Phone:
+            713.223.1600
+          %p 
+            %b Fax:
+            713.223.0131
+          %p smith@sbcglobal.net
+          %p www.aaadentists.com
+          %h2 Address
+          %p 611 Houston Ave, Houston, Texas 77007
+          %h2 Hours
+          %p 
+            %b Monday to Friday:
+            8:00am - 6:00pm
+          %p 
+            %b Saturday
+            9:00am - 2:00pm
       .content-type-1#page5-sub2-page
         .content-type-1-part-1
-          %h1 Direction
-          %h2 Mailing
-          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
-          %h2 Maps
-          %p Corporate design (logos, uniforms)
-          %p Corporate communications (advertisements, public relations, information, commercials)
-          %p Corporate behavior (internal values, norms)
-        .content-type-1-part-2
-          %br
-          %br
-          %br
-          %br
-          %p.note
-            %b corporate
-            identity 
-            %b blue 
-            | $1800
+          %h1 Make Appointment
+          %p If you have any additional questions, feel free to contact us.
+          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "629", :scrolling => "no", :src => "https://media3creative.wufoo.com/embed/w7w9x7/", :style => "width:500px;border:none;margin-left:30px;"}
+            %a{:href => "https://media3creative.wufoo.com/forms/w7w9x7/", :title => "AAA Dentist"} Fill out my Wufoo form!
+
+
   .upper-footer
-    All contents &copy; copyright 2010 - 2011  Creme da Creme. All rights reserved     |    Terms & conditions    |    Privacy policy    |    Terms of use     
+    All contents &copy; copyright 2010 - 2011 AAA Dentist | POWERED by MEDIA 3 CREATIVE.
   //footer
   // .footer-right
   //   %form#form1{:action => "", :method => "post", :name => "form1"}
