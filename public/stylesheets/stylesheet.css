@@ -322,6 +322,14 @@ ul.submenu li a {
   z-index: 4;
 }
 
+.normal-link {
+  color: #25aae1;
+}
+
+.normal-link:hover {
+  color: black;
+}
+
 p {
   margin-right: 20px;
   margin-top: 10px;
@@ -347,4 +355,25 @@ h2 {
   font-style: bold;
   color: #58595b;
   font-family: Helvetica_light;
+}
+
+.contact-info-box {
+  z-index: 10;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+.contact-info-box .contact-info {
+  background-color: white;
+  width: 400px;
+  padding-top: 50px;
+  height: 25px;
+  border-radius: 15px;
+  color: #58595b;
+  font-family: Helvetica_light;
+  letter-spacing: 0.075em;
+  margin: auto;
 }

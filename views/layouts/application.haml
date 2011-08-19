@@ -23,6 +23,9 @@
   .bg2
   .bg1
   .header
+  .contact-info-box
+    .contact-info
+      281-693-7767 | We open 7 days a week
   .left-side
   .menu-container
     %ul.menu
@@ -30,13 +33,13 @@
         %a{:href => "#", :id => "main-1-link"} HOME
         .menu-hl
       %li
-        %a{:href => "#", :id => "main-2-link"} DOCTORS
+        %a{:href => "#", :id => "main-2-link"} SERVICES
         .menu-hl
       %li{:style => "width:200px;visibility:hidden;"}
         %a{:href => "#"}
         //.menu-hl
       %li
-        %a{:href => "#", :id => "main-4-link"} SERVICES
+        %a{:href => "#", :id => "main-4-link"} LINKS
         .menu-hl
       %li
         %a{:href => "#", :id => "main-5-link"} CONTACT
@@ -49,54 +52,51 @@
         %li.blue#page1-sub1
           %a{:href => "#"} About us
         %li.green#page1-sub2
-          %a{:href => "#"} Treatments
+          %a{:href => "#"} Coupons
       .content-type-1#page1-sub1-page
         .content-type-1-part-1
           %h1 Who we are
-          %h2 Professionalism and Care
-          %p We are a friendly periodontal group in Houston, Texas, dedicated to giving you the finest and most attentive care possible. Periodontal disease is responsible for over 75% of all adult tooth loss in the United States. If you have been referred to our office by your general dentist, it is very likely that your periodontal infection has progressed beyond the mild stage. Please call us at (352) 351-5051 at your earliest convenience.
-          %p On your first visit to our office, we will give you a thorough examination and discuss our findings. Our treatment recommendations tend to be conservative. We want you to be completely informed of your choices before proceeding with care.
-          %p Our goal is to work closely with your general dentist to help you maintain your natural teeth for a lifetime. We hope you find this website a helpful introduction to our practice. If you have any further questions please do not hesitate to give us a call or e-mail us. Delaying treatment can have serious consequences.
+          %h2 Dr. Kevin Vu, DDS & Associates
+          %p AAADentists is committed to giving you comprehensive dental treatment options that will give you a beautiful smile and improved oral health. We have many convenient locations all over Texas that provide state-of-the-art facilities to treat any number of dental issues. AAADentists offers General, Cosmetic, Orthodontic, Oral Surgery, Implant, Periodontics and Endodontics. 
+          %p AAADentists provides treatment for patients of all ages, and we offer 7 days a week for your convenience. AAADentists is the easy way to affordable dental health. Welcome to our practice, and we look forward to hearing from you! treatment can have serious consequences.
+          %h2{:style => "color:#134e66;"} We accept Medicaid, Texas Chips and Insurance
+          %ul
+            %li 
+              %b{:style => "color:#134e66;"} Se Habla Espa&ntilde;ol
+            %li
+              %b{:style => "color:#134e66;"} Open 7 days a week
+            %li
+              %b{:style => "color:#134e66;"} Free Exam & Consultation (not including X-RAYS)
+            %li
+              %b{:style => "color:#134e66;"} Financing with Approved Credit
       .content-type-1#page1-sub2-page
         .content-type-1-part-1
-          %h1 Treatments
-          %h2 We Offer
-          %ul
-            %li - Teeth cleaning and maintenance
-            %li - Cavity management
-            %li - Bonded tooth-colored fillings
-            %li - Root canal treatment
-            %li - Mercury filling removal
-          %h2 We Offer Other Services Include:
-          %ul
-            %li - Soft tissue management and periodontal therapy
-            %li - Bite analysis and equilibration
-            %li - Porcelain crowns and veneers
-            %li - Full and partial dentures
-            %li - Implants
-            %li - Cosmetic re-contouring
-            %li - Bleaching: home and in-office Zoom!
+          %h1 Monthly Specials
+          %p Please print and cut out the special coupons.
+          %a.normal-link{:href => "/images/coupon.pdf"}  
+            %h2 Download the Print Friendly Version (PDF) here
+          %img{:height => "745", :src => "/images/coupon.png", :width => "485", :style => "margin-left:30px;"}
   .content-container#page2
     #page-2-content
-      .page-title DOCTORS
+      .page-title SERVICES
       %ul.submenu
         %li.blue#page2-sub1
-          %a{:href => "#"} Smith Jeef
-        %li.green#page2-sub2
-          %a{:href => "#"} David Beckham 
-        %li.blue#page2-sub3
-          %a{:href => "#"} Susan Boyle
+          %a{:href => "#"} Treatment
       .content-type-1#page2-sub1-page
         .content-type-1-part-1
-          %h1 Smith Jeef
-          %p Dr. Darby is an honors graduate from the University of Florida. He obtained his Doctorate of Dental Surgery from Emory University School of Dentistry where he also received the C.V. Mosby Award for Excellence in Operative Dentistry. Dr. Darby completed his specialty of Periodontics residency at the Medical College of Georgia in 1982.
-          %p In addition to full time periodontal and dental implant practice, Dr. Darby is a Courtesy Clinical Assistant Professor in the Department of Periodontology at the University of Florida, College of Dentistry.
-      .content-type-1#page2-sub2-page
-        .content-type-1-part-1
-          %h1 David Beckham
-      .content-type-1#page2-sub3-page
-        .content-type-1-part-1
-          %h1 Susan Boyle
+          %h1 Treatments
+          %h2 We provide
+          %ul
+            %li - General dentistry for you to maintain your oral health
+            %li - Cosmetic dentistry for you to enhance your smile
+            %li - Specialty dentistry when you need specialized care
+          %h2 Some of our services are
+          %ul
+            %li - Oral surgery
+            %li - Dental implants
+            %li - Root canal therapy
+            %li - Orthodontic treatment such as braces and Invisalign&reg clear teeth aligners
+            %li - Gum treatment (periodontics)
   .content-container#page3
     #page-3-content
       .page-title INFORMATION
@@ -111,39 +111,34 @@
         .content-type-1-part-1
   .content-container#page4
     #page-4-content
-      .page-title SERVICES
+      .page-title Useful Links
       %ul.submenu
         %li.blue#page4-sub1
-          %a{:href => "#"} Periodontal
-        %li.green#page4-sub2
-          %a{:href => "#"} Cosmetic
-        %li.blue#page4-sub3
-          %a{:href => "#"} Patient Comfort
+          %a{:href => "#"} Information
       .content-type-1#page4-sub1-page
         .content-type-1-part-1
-          %h1 Periodontal Disease
-          %p Periodontics is the branch of dentistry that deals with the care and treatment of the tissues surrounding and supporting your teeth. A periodontist is a dentist that specializes in the prevention and treatment of periodontal disease. Periodontists also place dental implants and can cosmetically enhance your smile through periodontal procedures.
-          %p As periodontists, Drs. Darby and Johnson have received years of additional training in periodontics beyond their general dental degree. They have highly specialized knowledge and skill in the diagnosis and treatment of periodontal disease, options for cosmetic periodontal procedures and the placement of dental implants.
-          %p The following will help you to better understand the procedures and conditions that Dr. Darby and Dr. Johnson are expert in dealing with
-      .content-type-1#page4-sub2-page
-        .content-type-1-part-1
-          %h1 Cosmetic Procedures
-          %h2 Crown Lengthening & Gingival Contouring
-          %p Sometimes the teeth are quite small in relation to the gum tissue. This can create an unattractive "gummy" smile. An uneven gum line can also be distracting.
-          %p The gum line, and the bone just beneath the gum line, can be lowered to change the appearance of your smile. This can create a more even gum line or make the teeth appear longer. “Gingival (gum) contouring" is the process of recontouring the gum only. "Crown lengthening" refers to recontouring of both gum and supporting bone.
-          %p Procedure: Your periodontist administers a local anesthetic and gently recontours excess gum and bone tissue to expose more of your natural teeth.
-          %h2 Teeth Whitening
-          %p At the Dental Cosmetic Center of Houston, we offer both in-office and custom at-home teeth whitening to help you get and keep the whitest smile possible. With in-office Pola treatment, you can get a whiter, brighter smile in under an hour! And our customized take-home trays will gently and thoroughly whiten your teeth on your own schedule, much more effectively than over the counter products.
-      .content-type-1#page4-sub3-page
-        .content-type-1-part-1
-          %h1 Patient Comfort
-          %p While no dental procedure is 100% comfortable, we go to great lengths to minimize any discomfort you might feel.  Many of our patients make statements like, "This wasn't even painful?  How did you do that?" 
-          %h2 Pre-medication
-          %p Patient comfort is one of the most important aspects of care.  Different patients have different needs for pain and anxiety control medication. Depending upon the procedure and your wishes, there are many medications we can prescribe.
-          %h2 Injections of Anesthesia
-          %p Injections of dental anesthesia can become more painful if not precisely done or if the injection is done at too rapid a rate.  We recognize this and take extra care when giving injections. 
-          %h2 Conscious Sedation
-          %p For those patients that would feel more comfortable with conscious sedation, we are pleased to offer both intravenous sedation and nitrous oxide analgesia. Both of these techniques will make you feel relaxed and at ease. Although you will be awake, you will not be aware of your surroundings. Conscious sedation can allow you to remain calm during dental procedures, with minimal recollection of your visit.
+          %h2 Healthy Teeth
+          %p You chew with your teeth. They can be a fashion statement, give you a fabulous smile and they are part of what makes you... you. Reading this article will teach you how to maintain healthy teeth
+          %a.normal-link{:href => "http://www.ehow.com/how_2300482_maintain-healthy-teeth.html", :style => "margin-left: 50px;", :target => "_blank"} Read more...
+          %br
+          %br
+          %h2 American Dental Association 
+          %p Founded in 1859, the American Dental Association is the oldest and largest national dental society in the world. Since then, the ADA has grown to become the leading source of oral health related information for dentists and their patients. Learn more about the ADA’s mission and vision, and our commitment to the public’s oral health, ethics, science and professional advancement and access to care for all Americans.
+          %a.normal-link{:href => "http://www.ada.org/aboutada.aspx", :style => "margin-left: 50px;", :target => "_blank"} Read more...
+          %br
+          %br
+          %h2 Orthodontics
+          %p Orthodontics, orthodontia, or orthodonture (from Greek orthos "straight or proper"; and odous "tooth") is the first specialty of dentistry that is concerned with the study and treatment of malocclusions (improper bites), which may be a result of tooth irregularity, disproportionate jaw relationships, or both
+          %a.normal-link{:href => "http://en.wikipedia.org/wiki/Orthodontics", :style => "margin-left: 50px;", :target => "_blank"} Read more...
+          %br
+          %br
+          %h2 Gum Diseases
+          %p Periodontitis is a set of inflammatory diseases affecting the periodontium, i.e., the tissues that surround and support the teeth. Periodontitis involves progressive loss of the alveolar bone around the teeth, and if left untreated, can lead to the loosening and subsequent loss of teeth
+          %a.normal-link{:href => "http://en.wikipedia.org/wiki/Periodontitis", :style => "margin-left: 50px;", :target => "_blank"} Read more...
+          %br
+          %br
+          %h2 Alternative Dentistry 
+          %a.normal-link{:href => "http://www.simplyteeth.com/category/sections/adult/GeneralDentalSubjects/AlternativeDentistry.asp?category=adultList&section=99&page=3#WIAD", :style => "margin-left: 50px;", :target => "_blank"} Read more...
   .content-container#page5
     #page-5-content-bg
     #page-5-content
@@ -152,30 +147,75 @@
         %li.blue#page5-sub1
           %a{:href => "#"} Contact
         %li.green#page5-sub2
-          %a{:href => "#"} Appointment
+          %a{:href => "#"} Questions
       .content-type-1#page5-sub1-page
         .content-type-1-part-1
-          %h2 Contact
-          %p 
+          %h1 24 Day a week
+          %p We open 7 days a week from 9:30am to 6:30pm at 5 locations.
+          %p Emergencies and Walk-Ins are welcome.
+          %h2 Main Office
+          %p
+            %b Address:
+            1520-B South Mason Rd. at Highland Knolls Katy, TX
+          %p
             %b Phone:
-            713.223.1600
-          %p 
-            %b Fax:
-            713.223.0131
-          %p smith@sbcglobal.net
-          %p www.aaadentists.com
-          %h2 Address
-          %p 611 Houston Ave, Houston, Texas 77007
-          %h2 Hours
-          %p 
-            %b Monday to Friday:
-            8:00am - 6:00pm
-          %p 
-            %b Saturday
-            9:00am - 2:00pm
+            281-693-7767
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1520-B+South+Mason+Rd.+at+Highland+Knolls+Katy,+TX&sll=29.761248,-95.751321&sspn=0.007917,0.013797&ie=UTF8&ll=29.760466,-95.751364&spn=0.008457,0.013797&z=16&iwloc=A", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
+          %h2 SouthWest Office
+          %p
+            %b Address:
+            8880 Bellaire Blvd, Suite E, Houston, TX 77036
+          %p
+            %b Phone:
+            717-779-1121
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=8880+Bellaire+Blvd,+Suite+E,+Houston,+TX+77036&sll=29.760466,-95.75145&sspn=0.008457,0.013797&g=1520-B+South+Mason+Rd.+at+Highland+Knolls+Katy,+TX&ie=UTF8&ei=ryqqSs6cIJH2uwOsrLmqDA&cd=1&li=lmd&usq=8880+Bellaire+Blvd,+Suite+E,+Houston,+TX+77036&geocode=FbJFxQEdVCpO-g&cid=8595070646969615011&ll=29.707698,-95.54065&spn=0.008461,0.013797&z=16&iwloc=A", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
+          %h2 Pasadena Office
+          %p
+            %b Address:
+            4816 Fairmont Parkway, Houston, TX 77505
+          %p
+            %b Phone:
+            281-991-9247
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4816+Fairmont+Parkway,+Houston,+TX+77505&sll=29.653859,-95.56818&sspn=0.008466,0.013797&ie=UTF8&ll=29.6522,-95.17087&spn=0.008466,0.013797&z=16&iwloc=r0", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
+          %h2 Clear Lake Office
+          %p
+            %b Address:
+            16605 El Camino Real, Houston, TX 77062
+          %p
+            %b Phone:
+            281-461-9647
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=16605+El+Camino+Real,+Houston,+TX+77062&sll=29.6522,-95.17087&sspn=0.008466,0.013797&ie=UTF8&ll=29.558713,-95.12068&spn=0.008474,0.013797&z=16&iwloc=r0", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
+          %h2 Katy Office
+          %p
+            %b Address:
+            1520 S Mason Road, # B, Katy, TX 77450
+          %p
+            %b Phone:
+            281-693-7767
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1520+S+Mason+Road,+%23+B,+Katy,+TX+77450&sll=29.558713,-95.12068&sspn=0.008474,0.013797&g=16605+El+Camino+Real,+Houston,+TX+77062&ie=UTF8&ll=29.763092,-95.751686&spn=0.008457,0.013797&z=16&iwloc=r0", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
+          %h2 Northwest Office
+          %p
+            %b Address:
+            11602 Veterans Memorial Dr, Houston, TX 77067
+          %p
+            %b Phone:
+            281-440-3701
+          %a.normal-link{:href => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=11602+Veterans+Memorial+Dr,+Houston,+TX+77067&sll=29.763092,-95.751686&sspn=0.008457,0.013797&ie=UTF8&ll=29.953224,-95.467973&spn=0.008441,0.013797&z=16&iwloc=r0", :style => "margin-left: 50px;", :target => "_blank"} Click for direction from Google Map
+          %br
+          %br
       .content-type-1#page5-sub2-page
         .content-type-1-part-1
-          %h1 Make Appointment
+          %h1 Questions
           %p If you have any additional questions, feel free to contact us.
           %iframe{:allowtransparency => "true", :frameborder => "0", :height => "629", :scrolling => "no", :src => "https://media3creative.wufoo.com/embed/w7w9x7/", :style => "width:500px;border:none;margin-left:30px;"}
             %a{:href => "https://media3creative.wufoo.com/forms/w7w9x7/", :title => "AAA Dentist"} Fill out my Wufoo form!
